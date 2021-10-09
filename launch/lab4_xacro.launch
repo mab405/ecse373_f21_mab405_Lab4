@@ -1,0 +1,5 @@
+<launch>
+	<param name="use_xacro" value="true" />
+	<param name="lab4_xacro.xacro" />
+	<include file="$(find navvis_description)/launch/lab4.launch" />
+</launch>
