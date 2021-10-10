@@ -1,5 +1,8 @@
 <launch>
-	<param name="use_xacro" value="true" />
-	<param name="lab4_xacro.xacro" />
-	<include file="$(find navvis_description)/launch/lab4.launch" />
+	<include file="$(find navvis_description)/launch/lab4.launch">
+		<arg name="use_xacro" default="true" />
+		<arg name="filename" default="lab4_xacro.xacro" />
+		<arg name="file" default="$(find lab4_rosbags)/urdf/$(arg filename)"/>
+	<param name="robot_description" textfile="$(arg file)" />
+	</include>
 </launch>
