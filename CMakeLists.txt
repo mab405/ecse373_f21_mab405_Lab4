@@ -8,9 +8,11 @@ project(lab4_rosbags)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
+  gazebo_plugins
   geometry_msgs
   navvis_description
   rviz
+  velodyne_description
   sensor_msgs
   urdf
   xacro
